@@ -1,10 +1,11 @@
 /*
-*       sfppi-vendor.c
+*       sfppi-vendor2.c
 *
 * 	Author - eoinpk.ek@gmail.com
+*	modify - nowpor@poczta.fm
 *
-*	To compile gcc -o sfppi-vendor sfppi-vendor.c -lwiringPi -lcrypto -lz
-*	-lm
+*	To compile gcc -o sfppi-vendor sfppi-vendor.c -lwiringPi -lm
+*	
 *
 *       sfppi-vendor is free software: you can redistribute it and/or modify
 *       it under the terms of the GNU Lesser General Public License as
@@ -38,7 +39,7 @@
 #include <unistd.h>
 #include <math.h>
 
-#define VERSION 0.2
+#define VERSION 0.3
 
 int mychecksum(unsigned char start_byte, unsigned char end_byte);
 int dump(char *filename);
